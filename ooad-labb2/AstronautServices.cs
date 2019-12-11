@@ -2,13 +2,14 @@
 using System.Collections.Generic;
 using System.Net;
 using Newtonsoft.Json;
+using System.Linq;
 
 namespace ooadlabb2
 {
     public class AstronautServices : IAstronautRepository
     {
 
-        public List<Astronauts> GetAstronauts()
+        public IEnumerable<Astronauts> GetAstronauts()
         {
             var baseUrl = "http://api.open-notify.org/astros.json";
             var client = new WebClient();

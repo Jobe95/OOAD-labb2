@@ -1,11 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
+using System.Linq;
 namespace ooadlabb2
 {
     public class ConsoleViewer
     {
-        private IAstronautRepository services;
+        private readonly IAstronautRepository services;
 
         public ConsoleViewer(IAstronautRepository iAstronautRepository)
         {
@@ -14,7 +15,7 @@ namespace ooadlabb2
 
         public void Load()
         {
-            printCurrentAstronauts(services.GetAstronauts());
+            printCurrentAstronauts(services.GetAstronauts().ToList());
         }
 
         public void printCurrentAstronauts(List<Astronauts> CurrentAstronauts)

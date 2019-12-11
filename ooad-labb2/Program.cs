@@ -11,16 +11,6 @@ namespace ooadlabb2
             Console.ReadKey();
             ConsoleViewer consoleViewer = new ConsoleViewer(new AstronautServices());
             consoleViewer.Load();
-            
-            
-            
-            
-            //foreach (Astronauts i in list)
-            //{
-            //    Console.WriteLine(i.name);
-            //    Console.WriteLine(i.craft);
-            //}
-            
         }
     }
 }
