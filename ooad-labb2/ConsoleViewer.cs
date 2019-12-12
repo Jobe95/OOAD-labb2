@@ -4,7 +4,7 @@ using System.Threading.Tasks;
 using System.Linq;
 namespace ooadlabb2
 {
-    public class ConsoleViewer
+    public class ConsoleViewer : IViewer
     {
         private readonly IAstronautRepository services;
 

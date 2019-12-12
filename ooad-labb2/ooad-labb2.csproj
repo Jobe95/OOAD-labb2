@@ -64,6 +64,7 @@
     <Compile Include="IAstronutRepository.cs" />
     <Compile Include="ConsoleViewer.cs" />
     <Compile Include="AstronautHelper.cs" />
+    <Compile Include="IViewer.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
