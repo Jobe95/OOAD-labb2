@@ -16,13 +16,5 @@ namespace ooadlabb2
             client.Dispose();
             return JsonConvert.DeserializeObject<AstronautRepository>(json).People;
         }
-        //public IEnumerable<Astronauts> GetAstronauts()
-        //{
-        //    var baseUrl = "http://api.open-notify.org/astros.json";
-        //    var client = new WebClient();
-        //    var json = client.DownloadString(baseUrl);
-        //    client.Dispose();
-        //    return JsonConvert.DeserializeObject<AstronautHelper>(json).People;
-        //}
     }
 }
