@@ -63,7 +63,7 @@
     <Compile Include="AstronautServices.cs" />
     <Compile Include="IAstronutRepository.cs" />
     <Compile Include="ConsoleViewer.cs" />
-    <Compile Include="AstronautHelper.cs" />
+    <Compile Include="AstronautRepository.cs" />
     <Compile Include="IViewer.cs" />
   </ItemGroup>
   <ItemGroup>

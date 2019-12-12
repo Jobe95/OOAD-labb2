@@ -9,7 +9,9 @@ namespace ooadlabb2
         {
             Console.WriteLine("Press a key to fetch astronauts");
             Console.ReadKey();
-            IViewer viewer = new ConsoleViewer(new AstronautServices());
+            //IViewer viewer = new ConsoleViewer(new AstronautServices());
+            //viewer.Load();
+            IViewer viewer = new ConsoleViewer(new AstronautRepository());
             viewer.Load();
         }
     }
