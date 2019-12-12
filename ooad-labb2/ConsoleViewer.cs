@@ -6,16 +6,16 @@ namespace ooadlabb2
 {
     public class ConsoleViewer : IViewer
     {
-        private readonly IAstronautRepository astronautRepository;
+        private readonly IAstronautService astrounatService;
 
-        public ConsoleViewer(IAstronautRepository iAstronautRepository)
+        public ConsoleViewer(IAstronautService astrounautService)
         {
-            this.astronautRepository = iAstronautRepository;
+            this.astrounatService = astrounautService;
         }
 
         public void Load()
         {
-            printCurrentAstronauts(astronautRepository.GetAstronauts().ToList());
+            printCurrentAstronauts(astrounatService.GetAstronauts().ToList());
         }
 
         public void printCurrentAstronauts(List<Astronauts> CurrentAstronauts)

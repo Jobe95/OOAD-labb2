@@ -5,6 +5,6 @@ namespace ooadlabb2
 {
     public interface IAstronautRepository
     {
-        IEnumerable<Astronauts> GetAstronauts();
+        IEnumerable<Astronauts> GetCurrentAstronauts();
     }
 }

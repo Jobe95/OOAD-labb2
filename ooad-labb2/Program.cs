@@ -11,7 +11,7 @@ namespace ooadlabb2
             Console.ReadKey();
             //IViewer viewer = new ConsoleViewer(new AstronautServices());
             //viewer.Load();
-            IViewer viewer = new ConsoleViewer(new AstronautRepository());
+            IViewer viewer = new ConsoleViewer(new AstronautServices());
             viewer.Load();
         }
     }
